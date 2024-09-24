@@ -32,7 +32,7 @@ const NavbarLinks = [
 function Navbar() {
   return (
   <>
-    <div className='container flex justify-between items-center'>
+    <div className='container flex justify-between items-center py-4'>
     {/* Logo Section */}
     <div className='flex items-center gap-2'>
         <img src={Logo} className='w-[50px]' alt="" />
@@ -40,7 +40,7 @@ function Navbar() {
     </div>
     {/* Link Section */}
     <div className='hidden md:block'>
-        <ul className='flex gap-3'>
+        <ul className='flex gap-3 xl:gap-4'>
             {NavbarLinks.map((link) => {
                 return (
                     <li key={link.id}>
