@@ -34,8 +34,9 @@ function Navbar() {
   <>
     <div className='container flex justify-between items-center'>
     {/* Logo Section */}
-    <div>
+    <div className='flex items-center gap-2'>
         <img src={Logo} className='w-[50px]' alt="" />
+        <p className='font-bold text-xl'>HUSTLE</p>
     </div>
     {/* Link Section */}
     <div className='hidden md:block'>
@@ -43,7 +44,7 @@ function Navbar() {
             {NavbarLinks.map((link) => {
                 return (
                     <li key={link.id}>
-                        <a href={link.link}>{link.title}</a>
+                        <a className='hover:text-primary uppercase text-sm md:text-base' href={link.link}>{link.title}</a>
                     </li>
                 )
             })}
@@ -51,7 +52,7 @@ function Navbar() {
     </div>
     {/* Button Section */}
     <div>
-        <button>Request for Quotation</button>
+        <button className='primary-btn'>Request for Quotation</button>
     </div>
     </div>
   </>
